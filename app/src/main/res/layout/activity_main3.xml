@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Using linear layout with vertical orientation and center gravity -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#FFFFFF"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <!--ImageView used for showing pictures along with questions-->
+    <ImageView
+        android:id="@+id/myimage"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"/>
+
+    <!--TextView used for showing questions on screen-->
+    <TextView
+        android:id="@+id/answer_text_view"
+        android:text="@string/a1"
+        android:textColor="@android:color/black"
+        android:textSize="30sp"
+        android:padding="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <!--Using another LinearLayout for showing buttons
+        in horizontal orientation-->
+    <RadioGroup
+        android:id="@+id/radiogroup"
+        android:layout_width="match_parent"
+        android:layout_height="211dp">
+
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="RadioButton" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="RadioButton" />
+
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="RadioButton" />
+
+        <RadioButton
+            android:id="@+id/radioButton4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="RadioButton" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+        android:layout_width="319dp"
+        android:layout_height="106dp">
+
+        <!--PreviousButton-->
+        <ImageButton
+            android:id="@+id/prev_button"
+            android:layout_width="73dp"
+            android:layout_height="58dp"
+            android:backgroundTint="#DFD2D1"
+            android:src="@drawable/left_arrow"
+            android:text="@string/prev_text" />
+
+        <!--NextButton-->
+        <ImageButton
+            android:id="@+id/next_button"
+            android:layout_width="72dp"
+            android:layout_height="64dp"
+            android:layout_alignParentRight="true"
+            android:backgroundTint="#DFD2D1"
+            android:src="@drawable/right_arrow"
+            android:text="@string/next_text" />
+
+    </RelativeLayout>
+</LinearLayout>

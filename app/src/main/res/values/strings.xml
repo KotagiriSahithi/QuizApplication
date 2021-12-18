@@ -1,0 +1,47 @@
+<resources>
+    <!--All the string resources come here including Questions and title -->
+    <string name="app_name">QUIZ</string>
+    <string name="correct"><b>CORRECTNESS IS</b> \n
+						<b>%1$d</b> OUT OF 6</string>
+    <string name="true_text">true</string>
+    <string name="false_text">false</string>
+    <string name="correct_answer">That\'s correct</string>
+    <string name="wrong_answer">That\'s incorrect</string>
+    <string name="a">Network operating system runs on ___________</string>
+    <string name="b">Logical extension of computation migration is ___________
+					</string>
+    <string name="c">Both T0, T1 are measured with ________ in Cristian's algorithm</string>
+    <string name="d">There is no problem, if client crashes in _________</string>
+    <string name="e">If one site fails in distributed system then ___________</string>
+    <string name="f">What is not true about a distributed system?</string>
+    <string name="g">What are the characteristics of a distributed file system?</string>
+    <string name="h">What is not a major reason for building distributed systems?</string>
+    <string name="i"> What are the characteristics of Naming and Name resolution?</string>
+    <string name="j">Which of the following is an application layer service?</string>
+    <string name="a1">Which of the following model is usually a gold standard for data analysis?</string>
+    <string name="b1">Which function can be used to produce the graph shown above?</string>
+    <string name="c1">R is an__________programming language?</string>
+    <string name="d1">Who developed R?</string>
+    <string name="e1">R is an interpreted language so it can access through ______</string>
+    <string name="f1">How many types of data types are present in R?</string>
+    <string name="g1">Which function is used to create the vector with more than one element?</string>
+    <string name="h1">In R every operation has a ______call?</string>
+    <string name="i1">Which of the following is performed by Data Scientist?</string>
+    <string name="j1">Which of the following is characteristic of Processed Data?</string>
+    <string name="a2">_______ is the practice and precautions taken to protect valuable information from unauthorised access, recording, disclosure or destruction.</string>
+    <string name="b2">Compromising confidential information comes under _________</string>
+    <string name="c2">Possible threat to any information cannot be ________________</string>
+    <string name="d2">Lack of access control policy is a _____________</string>
+    <string name="e2">............... is a main, reliable method of keeping your data secure – this scrambles data so anyone intercepting it cannot interpret it</string>
+    <string name="f2">unauthorized access to control over computer network security systems</string>
+    <string name="g2">Which one of the following describes why it is important to update antivirus software regularly?</string>
+    <string name="h2">Which one of the following is NOT a security threat?</string>
+    <string name="i2">Worms can spread without human assistance</string>
+    <string name="j2">.Voice ID, fingerprint scan and iris recognition are each examples of:</string>
+    <string name="next_text">next</string>
+    <string name="prev_text">previous</string>
+    <string name="distributed_systems">Distributed Systems</string>
+    <string name="data_science_using_r">Data Science Using R</string>
+    <string name="information_security">Information Security</string>
+
+</resources>
