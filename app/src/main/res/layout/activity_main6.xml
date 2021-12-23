@@ -20,7 +20,7 @@
     <!--TextView used for showing questions on screen-->
     <TextView
         android:id="@+id/answer_text_view"
-        android:text="@string/a2"
+        android:text="_______ is the practice and precautions taken to protect valuable information from unauthorised access, recording, disclosure or destruction."
         android:textColor="@android:color/black"
         android:textSize="30sp"
         android:padding="10dp"
