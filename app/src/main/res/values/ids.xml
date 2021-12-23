@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="question1_choice1" type="id" />
+    <item name="question1_choice2" type="id" />
+    <item name="question1_choice3" type="id" />
+    <item name="question1_choice4" type="id" />
+    <item name="question2_choice1" type="id" />
+    <item name="question2_choice2" type="id" />
+    <item name="question2_choice3" type="id" />
+    <item name="question5_choice1" type="id" />
+    <item name="question2_choice4" type="id" />
+</resources>

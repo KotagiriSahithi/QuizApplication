@@ -2,7 +2,7 @@
     <!--All the string resources come here including Questions and title -->
     <string name="app_name">QUIZ</string>
     <string name="correct"><b>CORRECTNESS IS</b> \n
-						<b>%1$d</b> OUT OF 6</string>
+						<b>%1$d</b> OUT OF 10</string>
     <string name="true_text">true</string>
     <string name="false_text">false</string>
     <string name="correct_answer">That\'s correct</string>
@@ -10,7 +10,7 @@
     <string name="a">Network operating system runs on ___________</string>
     <string name="b">Logical extension of computation migration is ___________
 					</string>
-    <string name="c">Both T0, T1 are measured with ________ in Cristian's algorithm</string>
+    <string name="c">Both T0, T1 are measured with ________ in Cristians algorithm</string>
     <string name="d">There is no problem, if client crashes in _________</string>
     <string name="e">If one site fails in distributed system then ___________</string>
     <string name="f">What is not true about a distributed system?</string>
@@ -43,5 +43,49 @@
     <string name="distributed_systems">Distributed Systems</string>
     <string name="data_science_using_r">Data Science Using R</string>
     <string name="information_security">Information Security</string>
+    <string name="op11">"server"</string>
+    <string name="op12">"every system in a network"</string>
+    <string name="op13">"both server and every system in a network"</string>
+    <string name="op14">"none of the above"</string>
+    <string name="op21">"process migration"</string>
+    <string name="op22">"system migration"</string>
+    <string name="op23">"thread migration"</string>
+    <string name="op24">"data migration"</string>
+    <string name="op31">"different CLK"</string>
+    <string name="op32">"same CLK"</string>
+    <string name="op33">"ambiguous"</string>
+    <string name="op34">"none of these"</string>
+    <string name="op41">"stateless server"</string>
+    <string name="op42">"stateful server"</string>
+    <string name="op43">"both 1 and 2"</string>
+    <string name="op44">"none of these"</string>
+    <string name="op51">"the remaining sites can continue operating"</string>
+    <string name="op52">"all the sites will stop working"</string>
+    <string name="op53">"directly connected sites will stop working"</string>
+    <string name="op54">"none of the above"</string>
+    <string name="op61">"it is a collection of processor"</string>
+    <string name="op62">"all the processors are synchronized"</string>
+    <string name="op63">"they do not share memory"</string>
+    <string name="op64">"none of the above"</string>
+    <string name="op71">"it's users,server and storage devices are dispersed"</string>
+    <string name="op72">"service activity is not carried out across the network"</string>
+    <string name="op73">"they have single centralized data repository"</string>
+    <string name="op74">"there are multiple dependent storage devices"</string>
+    <string name="op81">"resource sharing"</string>
+    <string name="op82">"computation speedup"</string>
+    <string name="op83">"reliability"</string>
+    <string name="op84">"simplicity"</string>
+    <string name="op91">"name systems in the network"</string>
+    <string name="op92">"address messages with the process-id"</string>
+    <string name="op93">"virtual circuit"</string>
+    <string name="op94">"message switching"</string>
+    <string name="op101">"mail service"</string>
+    <string name="op102">"file transfer"</string>
+    <string name="op103">"remote access"</string>
+    <string name="op104">"all of the above"</string>
+
+
+
+    <string name="select_answer" />
 
 </resources>

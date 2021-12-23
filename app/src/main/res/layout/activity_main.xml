@@ -34,24 +34,39 @@
         android:layout_height="wrap_content">
 
         <!--TrueButton-->
-        <Button
-            android:id="@+id/true_button"
-            android:layout_marginRight="20dp"
-            android:backgroundTint="#5BD91B"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="20sp"
-            android:text="@string/true_text" />
+        <RadioGroup
+            android:id="@+id/radiogroup"
+            android:layout_width="387dp"
+            android:layout_height="204dp">
 
-        <!--FalseButton-->
-        <Button
-            android:id="@+id/false_button"
-            android:layout_marginLeft="20dp"
-            android:layout_width="wrap_content"
-            android:backgroundTint="#E33328"
-            android:layout_height="wrap_content"
-            android:textSize="20sp"
-            android:text="@string/false_text" />
+            <RadioButton
+                android:id="@+id/radioButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#F000"
+                android:text="RadioButton" />
+
+            <RadioButton
+                android:id="@+id/radioButton2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#F000"
+                android:text="RadioButton" />
+
+            <RadioButton
+                android:id="@+id/radioButton3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#F000"
+                android:text="RadioButton" />
+
+            <RadioButton
+                android:id="@+id/radioButton4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#F000"
+                android:text="RadioButton" />
+        </RadioGroup>
 
     </LinearLayout>
 
