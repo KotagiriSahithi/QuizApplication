@@ -7,6 +7,7 @@
     <string name="false_text">false</string>
     <string name="correct_answer">That\'s correct</string>
     <string name="wrong_answer">That\'s incorrect</string>
+    //DS Questions
     <string name="a">Network operating system runs on ___________</string>
     <string name="b">Logical extension of computation migration is ___________
 					</string>
@@ -18,6 +19,7 @@
     <string name="h">What is not a major reason for building distributed systems?</string>
     <string name="i"> What are the characteristics of Naming and Name resolution?</string>
     <string name="j">Which of the following is an application layer service?</string>
+    //DSR Questions
     <string name="a1">Which of the following model is usually a gold standard for data analysis?</string>
     <string name="b1">Which function can be used to produce the graph shown above?</string>
     <string name="c1">R is an__________programming language?</string>
@@ -28,6 +30,7 @@
     <string name="h1">In R every operation has a ______call?</string>
     <string name="i1">Which of the following is performed by Data Scientist?</string>
     <string name="j1">Which of the following is characteristic of Processed Data?</string>
+    //IS Questions
     <string name="a2">_______ is the practice and precautions taken to protect valuable information from unauthorised access, recording, disclosure or destruction.</string>
     <string name="b2">Compromising confidential information comes under _________</string>
     <string name="c2">Possible threat to any information cannot be ________________</string>
@@ -36,7 +39,7 @@
     <string name="f2">unauthorized access to control over computer network security systems</string>
     <string name="g2">Which one of the following describes why it is important to update antivirus software regularly?</string>
     <string name="h2">Which one of the following is NOT a security threat?</string>
-    <string name="i2">Worms can spread without human assistance</string>
+    <string name="i2">What are the four possible options when responding to risk?</string>
     <string name="j2">.Voice ID, fingerprint scan and iris recognition are each examples of:</string>
     <string name="next_text">next</string>
     <string name="prev_text">previous</string>
@@ -55,8 +58,8 @@
     <string name="op32">"same CLK"</string>
     <string name="op33">"ambiguous"</string>
     <string name="op34">"none of these"</string>
-    <string name="op41">"stateless server"</string>
-    <string name="op42">"stateful server"</string>
+    <string name="op41">"stateless servers"</string>
+    <string name="op42">"stateful servers"</string>
     <string name="op43">"both 1 and 2"</string>
     <string name="op44">"none of these"</string>
     <string name="op51">"the remaining sites can continue operating"</string>
@@ -67,7 +70,7 @@
     <string name="op62">"all the processors are synchronized"</string>
     <string name="op63">"they do not share memory"</string>
     <string name="op64">"none of the above"</string>
-    <string name="op71">"it's users,server and storage devices are dispersed"</string>
+    <string name="op71">"it's users,servers and storage devices are dispersed"</string>
     <string name="op72">"service activity is not carried out across the network"</string>
     <string name="op73">"they have single centralized data repository"</string>
     <string name="op74">"there are multiple dependent storage devices"</string>
@@ -83,8 +86,88 @@
     <string name="op102">"file transfer"</string>
     <string name="op103">"remote access"</string>
     <string name="op104">"all of the above"</string>
-
-
+    //DSR ans
+    <string name="op211">"Inferential"</string>
+    <string name="op212">"Descriptive"</string>
+    <string name="op213">"Causal"</string>
+    <string name="op214">"All of the mentioned"</string>
+    <string name="op221">"xyplot()"</string>
+    <string name="op222">"stripplot()"</string>
+    <string name="op223">"barchart()"</string>
+    <string name="op224">"bwplot()"</string>
+    <string name="op231">"Closed source"</string>
+    <string name="op232">"GPL"</string>
+    <string name="op233">"Open source"</string>
+    <string name="op234">"Definite source"</string>
+    <string name="op241">"Dennis Ritchie"</string>
+    <string name="op242">"John Chambers"</string>
+    <string name="op243">"Bjarne Stroustrup"</string>
+    <string name="op244">"None of the above"</string>
+    <string name="op251">"Disk operating system"</string>
+    <string name="op252">"User interface operating system"</string>
+    <string name="op253">"Operating system"</string>
+    <string name="op254">"Command line interpreter"</string>
+    <string name="op261">"4"</string>
+    <string name="op262">"5"</string>
+    <string name="op263">"6"</string>
+    <string name="op264">"7"</string>
+    <string name="op271">"Library()"</string>
+    <string name="op272">"plot()"</string>
+    <string name="op273">"c()"</string>
+    <string name="op274">"par()"</string>
+    <string name="op281">"System</string>
+    <string name="op282">"Function"</string>
+    <string name="op283">"Both 1 and 2"</string>
+    <string name="op284">"None of the above"</string>
+    <string name="op291">"Define the question"</string>
+    <string name="op292">"Create reproducible code"</string>
+    <string name="op293">"Challenge results"</string>
+    <string name="op294">"All of the mentioned"</string>
+    <string name="op2101">"Data is not ready for analysis"</string>
+    <string name="op2102">"All steps should be noted"</string>
+    <string name="op2103">"Hard to use for data analysis"</string>
+    <string name="op2104">"None of the mentioned"</string>
+    //ISans
+    <string name="op311">"Network Security"</string>
+    <string name="op312">"Database Security"</string>
+    <string name="op313">"Information Security"</string>
+    <string name="op314">"Physical Security"</string>
+    <string name="op321">"Bug"</string>
+    <string name="op322">"Threat"</string>
+    <string name="op323">"Vulnerability"</string>
+    <string name="op324">"Attack"</string>
+    <string name="op331">"reduced"</string>
+    <string name="op332">"transferred"</string>
+    <string name="op333">"protected"</string>
+    <string name="op334">"ignored"</string>
+    <string name="op341">"Bug"</string>
+    <string name="op342">"Threat"</string>
+    <string name="op343">"Vulnerability"</string>
+    <string name="op344">"Attack"</string>
+    <string name="op351">"Verification"</string>
+    <string name="op352">"Authentication"</string>
+    <string name="op353">"Phishing"</string>
+    <string name="op354">"Encryption "</string>
+    <string name="op361">"Security"</string>
+    <string name="op362">"Hacking"</string>
+    <string name="op363">"Surfing"</string>
+    <string name="op364">"None of the above"</string>
+    <string name="op371">"To protect your computer from all known viruses"</string>
+    <string name="op372">"To ensure the software identifies old viruses"</string>
+    <string name="op373">"To protect your computer from unwanted bulk messages"</string>
+    <string name="op374">"To prevent the spread of malicious programs on the Internet"</string>
+    <string name="op381">"Worms"</string>
+    <string name="op382">"Hacking"</string>
+    <string name="op383">"Anti-Virus"</string>
+    <string name="op384">"Pharming"</string>
+    <string name="op391">"Avoid, Transfer, Accept, Mitigate"</string>
+    <string name="op392">"Accept, Mitigate, Evade, Transfer"</string>
+    <string name="op393">"Evade, Receive, Transfer, Avoid"</string>
+    <string name="op394">"Mitigate, Avoid, Evade, Transfer"</string>
+    <string name="op3101">"Data protected by PCI DSS"</string>
+    <string name="op3102">"Biometric authentication factors"</string>
+    <string name="op3103">"Security tokens"</string>
+    <string name="op3104">"IoT technology"</string>
 
     <string name="select_answer" />
 

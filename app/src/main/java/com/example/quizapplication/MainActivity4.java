@@ -13,7 +13,7 @@ import android.widget.Toast;
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
-public class MainActivity extends AppCompatActivity
+public class MainActivity4 extends AppCompatActivity
         implements View.OnClickListener {
 
     private RadioButton option1;
@@ -35,16 +35,16 @@ public class MainActivity extends AppCompatActivity
             // array of objects of class Question
             // providing questions from string
             // resource and the correct ans
-            new Question(R.string.a, "server",R.string.op11,R.string.op12,R.string.op13,R.string.op14),
-            new Question(R.string.b, "process migration",R.string.op21,R.string.op22,R.string.op23,R.string.op24),
-            new Question(R.string.c, "same CLK",R.string.op31,R.string.op32,R.string.op33,R.string.op34),
-            new Question(R.string.d, "stateless servers",R.string.op41,R.string.op42,R.string.op43,R.string.op44),
-            new Question(R.string.e, "the remaining sites can continue operating",R.string.op51,R.string.op52,R.string.op53,R.string.op54),
-            new Question(R.string.f, "all the processors are synchronized",R.string.op61,R.string.op62,R.string.op63,R.string.op64),
-            new Question(R.string.g, "it's users,servers and storage devices are dispersed",R.string.op71,R.string.op72,R.string.op73,R.string.op74),
-            new Question(R.string.h, "simplicity",R.string.op81,R.string.op82,R.string.op83,R.string.op84),
-            new Question(R.string.i, "address messages with the process-id",R.string.op91,R.string.op92,R.string.op93,R.string.op94),
-            new Question(R.string.j, "all of the above",R.string.op101,R.string.op102,R.string.op103,R.string.op104),
+            new Question(R.string.a2, "Information Security",R.string.op311,R.string.op312,R.string.op313,R.string.op314),
+            new Question(R.string.b2, "Threat",R.string.op321,R.string.op322,R.string.op323,R.string.op324),
+            new Question(R.string.c2, "ignored",R.string.op331,R.string.op332,R.string.op333,R.string.op334),
+            new Question(R.string.d2, "Vulnerability",R.string.op341,R.string.op342,R.string.op343,R.string.op344),
+            new Question(R.string.e2, "Encryption",R.string.op351,R.string.op352,R.string.op353,R.string.op354),
+            new Question(R.string.f2, "Hacking",R.string.op361,R.string.op362,R.string.op363,R.string.op364),
+            new Question(R.string.g2, "To protect your computer from all known viruses",R.string.op371,R.string.op372,R.string.op373,R.string.op374),
+            new Question(R.string.h2, "Hacking",R.string.op381,R.string.op382,R.string.op383,R.string.op384),
+            new Question(R.string.i2, "Avoid, Transfer, Accept, Mitigate",R.string.op391,R.string.op392,R.string.op393,R.string.op394),
+            new Question(R.string.j2, "Biometric authentication factors",R.string.op3101,R.string.op3102,R.string.op3103,R.string.op3104),
 
     };
 
@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity
         setContentView(R.layout.activity_main);
         // setting up the buttons
         // associated with id
-       // falseButton = findViewById(R.id.false_button);
+        // falseButton = findViewById(R.id.false_button);
         //trueButton = findViewById(R.id.true_button);
         nextButton = findViewById(R.id.next_button);
         prevButton = findViewById(R.id.prev_button);
@@ -74,10 +74,10 @@ public class MainActivity extends AppCompatActivity
         nextButton.setOnClickListener(this);
         prevButton.setOnClickListener(this);
         rg = (RadioGroup) findViewById(R.id.radiogroup);
-        option1.setText(R.string.op11);
-        option2.setText(R.string.op12);
-        option3.setText(R.string.op13);
-        option4.setText(R.string.op14);
+        option1.setText(R.string.op311);
+        option2.setText(R.string.op312);
+        option3.setText(R.string.op313);
+        option4.setText(R.string.op314);
         if(rg.getCheckedRadioButtonId()==-1)
         {
             Toast.makeText(getApplicationContext(), "Please select an option...", Toast.LENGTH_SHORT).show();
@@ -106,7 +106,7 @@ public class MainActivity extends AppCompatActivity
                     .getText().toString();
             checkAnswer(value);
         }
-       // a++;
+        // a++;
         switch (v.getId()) {
 
             case R.id.next_button:
@@ -150,7 +150,7 @@ public class MainActivity extends AppCompatActivity
                             Image.setImageResource(
                                     R.drawable.resu);
                         //questionTextView.setText(
-                                //"Better Luck Next Time!");
+                        //"Better Luck Next Time!");
                         // if correctness<3 showing sad emoji
                     }
                     else {
@@ -179,7 +179,7 @@ public class MainActivity extends AppCompatActivity
         questionTextView.setText(
                 questionBank[currentQuestionIndex]
                         .getAnswerResId());
-       option1.setText(questionBank[currentQuestionIndex].getoption1());
+        option1.setText(questionBank[currentQuestionIndex].getoption1());
         option2.setText(questionBank[currentQuestionIndex].getoption2());
         option3.setText(questionBank[currentQuestionIndex].getoption3());
         option4.setText(questionBank[currentQuestionIndex].getoption4());
@@ -221,24 +221,24 @@ public class MainActivity extends AppCompatActivity
         int toastMessageId;
         // if ans matches with the
         // button clicked
-    if(answerIsTrue!=null){
-        if (userChooseCorrect.equals(answerIsTrue)) {
-            toastMessageId = R.string.correct_answer;
-            //if(a==1)
-            correct++;
+        if(answerIsTrue!=null){
+            if (userChooseCorrect.equals(answerIsTrue)) {
+                toastMessageId = R.string.correct_answer;
+                //if(a==1)
+                correct++;
+            }
+            else {
+                // showing toast
+                // message correct
+                //a=1;
+                toastMessageId = R.string.wrong_answer;
+            }
         }
-        else {
-            // showing toast
-            // message correct
-            //a=1;
-            toastMessageId = R.string.wrong_answer;
-        }
-    }
-    else
-        toastMessageId=R.string.select_answer;
+        else
+            toastMessageId=R.string.select_answer;
 
         Toast
-                .makeText(MainActivity.this, toastMessageId,
+                .makeText(MainActivity4.this, toastMessageId,
                         Toast.LENGTH_SHORT)
                 .show();
     }

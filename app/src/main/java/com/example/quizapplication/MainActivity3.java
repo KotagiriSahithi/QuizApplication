@@ -13,7 +13,7 @@ import android.widget.Toast;
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
-public class MainActivity extends AppCompatActivity
+public class MainActivity3 extends AppCompatActivity
         implements View.OnClickListener {
 
     private RadioButton option1;
@@ -35,16 +35,16 @@ public class MainActivity extends AppCompatActivity
             // array of objects of class Question
             // providing questions from string
             // resource and the correct ans
-            new Question(R.string.a, "server",R.string.op11,R.string.op12,R.string.op13,R.string.op14),
-            new Question(R.string.b, "process migration",R.string.op21,R.string.op22,R.string.op23,R.string.op24),
-            new Question(R.string.c, "same CLK",R.string.op31,R.string.op32,R.string.op33,R.string.op34),
-            new Question(R.string.d, "stateless servers",R.string.op41,R.string.op42,R.string.op43,R.string.op44),
-            new Question(R.string.e, "the remaining sites can continue operating",R.string.op51,R.string.op52,R.string.op53,R.string.op54),
-            new Question(R.string.f, "all the processors are synchronized",R.string.op61,R.string.op62,R.string.op63,R.string.op64),
-            new Question(R.string.g, "it's users,servers and storage devices are dispersed",R.string.op71,R.string.op72,R.string.op73,R.string.op74),
-            new Question(R.string.h, "simplicity",R.string.op81,R.string.op82,R.string.op83,R.string.op84),
-            new Question(R.string.i, "address messages with the process-id",R.string.op91,R.string.op92,R.string.op93,R.string.op94),
-            new Question(R.string.j, "all of the above",R.string.op101,R.string.op102,R.string.op103,R.string.op104),
+            new Question(R.string.a1, "Causal",R.string.op211,R.string.op212,R.string.op213,R.string.op214),
+            new Question(R.string.b1, "stripplot()",R.string.op221,R.string.op222,R.string.op223,R.string.op224),
+            new Question(R.string.c1, "Open source",R.string.op231,R.string.op232,R.string.op233,R.string.op234),
+            new Question(R.string.d1, "John Chambers",R.string.op241,R.string.op242,R.string.op243,R.string.op244),
+            new Question(R.string.e1, "Command line interpreter",R.string.op251,R.string.op252,R.string.op253,R.string.op254),
+            new Question(R.string.f1, "6",R.string.op261,R.string.op262,R.string.op263,R.string.op264),
+            new Question(R.string.g1, "c()",R.string.op271,R.string.op272,R.string.op273,R.string.op274),
+            new Question(R.string.h1, "Function",R.string.op281,R.string.op282,R.string.op283,R.string.op284),
+            new Question(R.string.i1, "All of the mentioned",R.string.op291,R.string.op292,R.string.op293,R.string.op294),
+            new Question(R.string.j1, "All steps should be noted",R.string.op2101,R.string.op2102,R.string.op2103,R.string.op2104),
 
     };
 
@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity
         setContentView(R.layout.activity_main);
         // setting up the buttons
         // associated with id
-       // falseButton = findViewById(R.id.false_button);
+        // falseButton = findViewById(R.id.false_button);
         //trueButton = findViewById(R.id.true_button);
         nextButton = findViewById(R.id.next_button);
         prevButton = findViewById(R.id.prev_button);
@@ -74,10 +74,10 @@ public class MainActivity extends AppCompatActivity
         nextButton.setOnClickListener(this);
         prevButton.setOnClickListener(this);
         rg = (RadioGroup) findViewById(R.id.radiogroup);
-        option1.setText(R.string.op11);
-        option2.setText(R.string.op12);
-        option3.setText(R.string.op13);
-        option4.setText(R.string.op14);
+        option1.setText(R.string.op211);
+        option2.setText(R.string.op212);
+        option3.setText(R.string.op213);
+        option4.setText(R.string.op214);
         if(rg.getCheckedRadioButtonId()==-1)
         {
             Toast.makeText(getApplicationContext(), "Please select an option...", Toast.LENGTH_SHORT).show();
@@ -106,7 +106,7 @@ public class MainActivity extends AppCompatActivity
                     .getText().toString();
             checkAnswer(value);
         }
-       // a++;
+        // a++;
         switch (v.getId()) {
 
             case R.id.next_button:
@@ -150,7 +150,7 @@ public class MainActivity extends AppCompatActivity
                             Image.setImageResource(
                                     R.drawable.resu);
                         //questionTextView.setText(
-                                //"Better Luck Next Time!");
+                        //"Better Luck Next Time!");
                         // if correctness<3 showing sad emoji
                     }
                     else {
@@ -179,7 +179,7 @@ public class MainActivity extends AppCompatActivity
         questionTextView.setText(
                 questionBank[currentQuestionIndex]
                         .getAnswerResId());
-       option1.setText(questionBank[currentQuestionIndex].getoption1());
+        option1.setText(questionBank[currentQuestionIndex].getoption1());
         option2.setText(questionBank[currentQuestionIndex].getoption2());
         option3.setText(questionBank[currentQuestionIndex].getoption3());
         option4.setText(questionBank[currentQuestionIndex].getoption4());
@@ -187,31 +187,6 @@ public class MainActivity extends AppCompatActivity
 
 
         // setting the textview with new question
-        /*switch (currentQuestionIndex) {
-            case 1:
-                // setting up image for each
-                // question
-                Image.setImageResource(R.drawable.f2);
-                break;
-            case 2:
-                Image.setImageResource(R.drawable.f3);
-                break;
-            case 3:
-                Image.setImageResource(R.drawable.f4);
-                break;
-            case 4:
-                Image.setImageResource(R.drawable.f5);
-                break;
-            case 5:
-                Image.setImageResource(R.drawable.f6);
-                break;
-            case 6:
-                Image.setImageResource(R.drawable.f7);
-                break;
-            case 7:
-                Image.setImageResource(R.drawable.f1);
-                break;
-        }*/
     }
     private void checkAnswer(String userChooseCorrect)
     {
@@ -221,24 +196,24 @@ public class MainActivity extends AppCompatActivity
         int toastMessageId;
         // if ans matches with the
         // button clicked
-    if(answerIsTrue!=null){
-        if (userChooseCorrect.equals(answerIsTrue)) {
-            toastMessageId = R.string.correct_answer;
-            //if(a==1)
-            correct++;
+        if(answerIsTrue!=null){
+            if (userChooseCorrect.equals(answerIsTrue)) {
+                toastMessageId = R.string.correct_answer;
+                //if(a==1)
+                correct++;
+            }
+            else {
+                // showing toast
+                // message correct
+                //a=1;
+                toastMessageId = R.string.wrong_answer;
+            }
         }
-        else {
-            // showing toast
-            // message correct
-            //a=1;
-            toastMessageId = R.string.wrong_answer;
-        }
-    }
-    else
-        toastMessageId=R.string.select_answer;
+        else
+            toastMessageId=R.string.select_answer;
 
         Toast
-                .makeText(MainActivity.this, toastMessageId,
+                .makeText(MainActivity3.this, toastMessageId,
                         Toast.LENGTH_SHORT)
                 .show();
     }

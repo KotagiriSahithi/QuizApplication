@@ -23,19 +23,19 @@ public class MainActivity2 extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        /*b2.setOnClickListener(new View.OnClickListener() {
+        b2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //Intent intent = new Intent(getApplicationContext(), MainActivity3.class);
-                //startActivity(intent);
+                Intent intent = new Intent(getApplicationContext(), MainActivity3.class);
+                startActivity(intent);
             }
         });
         b3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //Intent intent = new Intent(getApplicationContext(), MainActivity4.class);
-                //startActivity(intent);
+                Intent intent = new Intent(getApplicationContext(), MainActivity4.class);
+                startActivity(intent);
             }
-        });*/
+        });
     }
 }
