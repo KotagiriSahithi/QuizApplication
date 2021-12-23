@@ -74,6 +74,7 @@ public class MainActivity3 extends AppCompatActivity
         nextButton.setOnClickListener(this);
         prevButton.setOnClickListener(this);
         rg = (RadioGroup) findViewById(R.id.radiogroup);
+        questionTextView.setText(R.string.a1);
         option1.setText(R.string.op211);
         option2.setText(R.string.op212);
         option3.setText(R.string.op213);

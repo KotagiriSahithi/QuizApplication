@@ -66,6 +66,7 @@ public class MainActivity4 extends AppCompatActivity
         Image = findViewById(R.id.myimage);
         //falseButton.setOnClickListener(this);
         //trueButton.setOnClickListener(this);
+        questionTextView.setText(R.string.a2);
         option1 = findViewById(R.id.radioButton);
         option2 = findViewById(R.id.radioButton2);
         option3= findViewById(R.id.radioButton3);

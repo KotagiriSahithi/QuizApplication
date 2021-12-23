@@ -20,7 +20,7 @@
     <!--TextView used for showing questions on screen-->
     <TextView
         android:id="@+id/answer_text_view"
-        android:text="Which of the following model is usually a gold standard for data analysis?"
+        android:text="@string/a1"
         android:textColor="@android:color/black"
         android:textSize="30sp"
         android:padding="10dp"
